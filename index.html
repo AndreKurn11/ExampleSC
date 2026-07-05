@@ -36,11 +36,6 @@
             </p>
 
             <div class="d-flex flex-wrap gap-3">
-              <a href="tambah.html" class="btn btn-primary btn-lg">
-                <i class="bi bi-plus-circle me-2"></i>
-                Tambah Mobil
-              </a>
-
               <a href="#daftarMobil" class="btn btn-outline-dark btn-lg">
                 <i class="bi bi-car-front me-2"></i>
                 Lihat Daftar
@@ -85,15 +80,28 @@
 
       <!-- Section Daftar Mobil -->
       <section id="daftarMobil">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="h3 mb-0">Daftar Mobil Rental</h2>
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+          <div>
+            <h2 class="h3 mb-0">
+              <i class="bi bi-car-front-fill me-2 text-primary"></i>
+              Daftar Mobil Rental
+            </h2>
+          </div>
 
-          <span class="badge bg-primary fs-6"> Total: 3 Mobil </span>
-          <!-- Total Mobil didapat dari database -->
+          <div class="d-flex align-items-center gap-3">
+            <span class="badge bg-primary fs-6 px-3 py-2">
+              Total: 3 Mobil <!-- Total Mobil didapat dari database -->
+            </span>
+
+            <a href="tambah.html" class="btn btn-primary">
+              <i class="bi bi-plus-circle me-2"></i>
+              Tambah Mobil
+            </a>
+          </div>
         </div>
 
         <div class="row g-4" id="car-list">
-          <!-- Template Untuk Looping Data Mobil -->
+          <!-- Template Untuk Looping Data Mobil (Dari sini) -->
           <div class="col-md-6 col-lg-4">
             <article class="card shadow-sm h-100">
               <img
